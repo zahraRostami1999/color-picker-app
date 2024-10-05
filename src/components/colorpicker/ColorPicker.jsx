@@ -9,7 +9,7 @@ function ColorPicker() {
   };
   return (
     <>
-      <div className={styles.container}>
+      <div className={styles.pickerContainer}>
         <div className={styles.titleBox}>
           <h2>Pick Your background color:</h2>
         </div>
@@ -20,7 +20,9 @@ function ColorPicker() {
             onChange={handleChangeColor}
             name="color"
           />
-          <p>hex: {color}</p>
+        </div>
+        <div className={styles.hexBox}>
+          <p>Hex color: {color}</p>
         </div>
       </div>
     </>
